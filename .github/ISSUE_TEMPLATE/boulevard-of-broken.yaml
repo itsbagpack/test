@@ -1,0 +1,18 @@
+---
+jobs: 
+  - name: hello-world
+    plan: 
+      - 
+        config: 
+          image_resource: 
+            source:
+              repository: alpine
+              - oh: no
+            type: registry-image
+          platform: linux
+          run: 
+            args: 
+              - "Hello, world!"
+            path: echo
+        task: say-hello
+
