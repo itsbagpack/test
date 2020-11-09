@@ -3,4 +3,13 @@ no-name: "A template has no name"
 description: 23
 labels: true
 issue_body: false
-inputs: []
+inputs:
+- type: not-a-type
+- type: description
+  attributes:
+    i-dont-want: no scrubs
+- type: input
+  attributes:
+    label: 234234234
+- invalid:
+    structure: "for an input"
